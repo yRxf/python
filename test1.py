@@ -9,3 +9,5 @@ def test1(*args,**dics):
             print(key+":"+value)
     else:
         print("没有传递字典！")
+
+test1("dsa","das",lala="dasd",ls="das")
