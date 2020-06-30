@@ -224,7 +224,7 @@ date_parser : function, default None
 2.连接指定多列字符串作为一个列作为参数；
 3.每行调用一次date_parser函数来解析一个或者多个字符串（由parse_dates指定）作为参数。
  
-dayfirst : boolean, default False
+dayfirst : boolean, default Falsech
 DD/MM格式的日期类型
 '''
 #iterator : boolean, default False  返回一个TextFileReader 对象，以便逐块处理文件。

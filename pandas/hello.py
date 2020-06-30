@@ -912,6 +912,7 @@ max    7.000000  1.00000  8.000000
 3  2.0  1 -2.5
 '''
 #print(frame.apply(pd.value_counts).fillna(0))   #统计每列数字出现的次数
+#如果只有一条它会降维，变成Series类型，此时统计的是数据的str的长度
 '''
         b    a    c
 -3.0  1.0  0.0  0.0
@@ -1334,3 +1335,8 @@ MultiIndex([('one', 0),
  1 -7.0  7.0 -6.0 -5.0  8.0
 '''
 #print(frame)
+#pandas replace
+# replace的基本结构是：df.replace(to_replace, value) 前面是需要替换的值，后面是替换后的值。
+
+###按电影名称和上映时间去重
+#data.drop_duplicates(subset=['movie_title','title_year'],keep='first',inplace=True)
